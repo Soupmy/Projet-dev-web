@@ -1,0 +1,132 @@
+* {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    
+}
+.ren{
+    background-color: #F0F0F0;
+    margin: 0;
+}
+
+.forbg {
+    background-image: url('img/back.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 90%;
+    height: 450px;
+    padding-top: 100px;
+    position: relative;
+    z-index: 0.9;
+}
+
+
+
+h1 {
+    text-align: center;
+    color: #1F485E;
+    font-weight: 800;
+    margin: 1.5em 1.5em 1.5em 20%;
+}
+
+h2 {
+    text-align: center;
+    color: #1F485E;
+    font-weight: 600;
+    margin: 1em 1em 1em 40%;
+}
+
+.renseigne {
+
+    justify-content: center;
+    align-items: center;
+    margin-right: 10%;
+    
+}
+
+.renseigne p {
+    font-weight: 600;
+    font-size: 20px;
+    color: #1F485E;
+    text-align: center;
+    margin: 1em 1em 1em 40%;
+}
+
+.selectors {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    color: #1F485E;
+    gap: 70px;
+    margin: 3em;
+}
+
+select {
+    padding: 5px;
+    font-size: 20px;
+    color: #1F485E;
+    border-radius: 5px;
+    background-color: #99D3ED;
+}
+
+.select-option {
+    font-size: 20px;
+}
+
+button {
+    background-color: #0091D3;
+    width: 175px;
+    height: 55px;
+    border-radius: 25px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+button:disabled {
+    background-color: #1F485E;
+    cursor: not-allowed;
+}
+
+button:hover:disabled {
+    background-color: #1F485E;
+    cursor: not-allowed;
+    transform: translateY(0px);
+    transform: scale(1);
+}
+
+a {
+    text-decoration: none;
+    color: #0091D3;
+}
+
+#preview-container {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 20px;
+    color: #0091D3;
+    display: flex;
+}
+embed {
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin: 10px 15%;
+    
+}

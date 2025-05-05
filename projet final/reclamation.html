@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylish.css">
+    <link rel="stylesheet" href="navbar-pages.css">
+    <link rel="stylesheet" href="newfooter.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" /> 
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Nous contacter </title>
+</head>
+<body>
+  <header>
+    <div class="navbar">    
+        <nav class="nav"> 
+            <div class="logo">
+                <img src="img/logo.jpg" alt="Logo de l'université">
+            </div>
+            <div class="menu">
+                <ul>
+                    <li class="element"><a href="acceuil.html" class="navbar-link">Acceuil</a></li>
+                    <li class="element">
+                      <a href="" class="navbar-link">Etudiants</a>
+                      <ul class="dropdown">
+                        <li><a href="liste-etudiants.html">Liste d'etudiants</a></li>
+                        <li><a href="Emploi du temps.html">Emploi du temps</a></li>
+                        <li><a href="club.html">Clubs</a></li>
+                      </ul>
+                    </li>
+                    <li class="element"><a href="profsrenseignements.html" class="navbar-link">Liste de contactes</a></li>
+                    <li class="element"><a href="reclamation.html" class="navbar-link contacter">Nous contacter</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+  </header>
+
+<!-----------------------------------------page----------------------------------------------------->
+<div class="color">   
+  <div class="background">
+        <div class="pre-content">
+            <h1 class="titre">Vous voulez contacter le départment ?</h1>
+            <p class="text">Vous êtes au bon endroit pour entrer en contact avec notre département informatique. Que vous ayez des questions sur nos programmes d'études, besoin d'assistance technique, ou simplement envie de découvrir nos projets innovants, notre équipe est là pour vous aider.</p>
+            <p class="sous-text">N'hésitez pas à nous contacter pour toute demande d'information supplémentaire ou pour planifier une visite de nos installations. Nous sommes déterminés à fournir un soutien exceptionnel à nos étudiants, partenaires et communauté dans tous les aspects liés à l'informatique.</p>
+            
+        </div>
+      </div>
+    
+        <div class="online">
+          <h2>Demande en ligne</h2>
+        </div>
+      <div class="formulaire">
+          <form>
+              <fieldset>
+                <legend class="important">Informations Personnelles</legend>
+                <label for="nom" >Nom :</label>
+                <input type="text" required id="nom" name="nom">
+                <label for="prenom" class="deux">Prenom :</label>
+                <input type="text" required id="prenom" name="prenom"><br><br>
+                <label for="matricule">Matricule :</label>
+                <input type="matricule" required id="matricule" name="matricule">
+                <label for="telephone" class="trois">Téléphone :</label>
+                <input type="tel" id="telephone" name="telephone"><br><br>
+                <label for="email">Adresse e-mail :</label>
+                <input type="email" required id="email" name="email">
+                
+              </fieldset>
+            
+              
+            
+              <fieldset>
+                <legend class="important">Objet de votre message :</legend>
+                <select id="objet_message" class="objet_message" name="objet_message">
+                  <option value="Problèmes techniques sur le site">Problèmes techniques sur le site</option>
+                  <option value="Difficulté à trouver des informations">Difficulté à trouver des informations</option>
+                  <option value="Suggestions d'amélioration">Suggestions d'amélioration</option>
+                  <option value="Autre">Autre</option>
+                </select><br><br>
+              </fieldset>
+            
+              <fieldset>
+                <legend>Description de votre message :</legend>
+                <textarea id="description" name="description" rows="4" cols="50"></textarea><br><br>
+              </fieldset>
+            
+              <input id="boutton" id="boutton-envoyer" type="submit" value="Envoyer">
+            </form>
+            
+      </div>
+
+      <div class="rdv">
+        <h2>Prenez rendez-vous</h2>
+        <p class="t">Si vous avez besoin d'une assistance personnalisée ou souhaitez discuter de sujets spécifiques avec notre
+           équipe, nous vous encourageons à planifier un rendez-vous. Nos experts sont là pour répondre à vos questions, discuter 
+           de vos projets et vous guider dans votre parcours informatique.</p>
+        <button class="en-savoir-plus">Prendre rendez-vous</button>
+      </div>
+      <div class="prise-rdv hidden" id="plus">
+        <h3 class="choix">Choisissez le créneau qui vous convient parmi ceux disponibles :</h3>
+        <div class="select-rdv">
+            <fieldset>  
+              <fieldset>
+                <legend class="choix">Nature de votre rendez-vous :</legend>
+                <div class="radio" >
+                  <input type="radio" class="radio-input" checked id="plainte" name="nature_message" value="Plainte">
+                  <label for="plainte" class="radio-label" ><p>Plainte</p></label><br>
+                </div>
+                <div class="radio">
+                  <input type="radio" class="radio-input" id="demande" name="nature_message" value="Demande">
+                  <label for="demande" class="radio-label" ><p>Demande</p></label>
+                </div>
+              </fieldset>
+            </fieldset>
+            <p id="selection" class="select">
+              <!-- change en fonction de la selection (js) -->
+            </p>
+            <div><p class="choix">Date</p></div>
+<div class="calendrier-container">
+  <div class="calendrier">
+    <select id="jour" class="date-select"></select>
+    <select id="mois" class="date-select"></select>
+    <select id="annee" class="date-select"></select>
+  </div>
+</div>
+
+<div><p class="choix">Heure</p></div>
+<div id="heures-disponibles" class="heures-container"></div>
+            </div>
+            <div>
+              <form class="form">
+                <fieldset class="second">
+                  <legend class="info-perso">Informations Personnelles</legend>
+                  <div class="info">
+                    <label for="nom-prenom" >Nom et prénom</label><br>
+                    <input type="text" placeholder="Nom et prénom" id="nomm" name="nomm"><BR><br>
+                    <label for="matriculee">Matricule</label><br>
+                    <input type="matriculee" placeholder="Matricule" id="matriculee" name="matriculee"><br><br>
+                    <label for="telephonee">Numéro de téléphone</label><br>
+                    <input type="tel" placeholder="Ajoutez votre numéro de téléphone" id="telephonee" name="telephonee"><br><br>
+                    <label for="emaill">Adresse e-mail</label><br>
+                    <input type="emaill" placeholder="Ajoutez votre adresse mail" required id="emaill" name="emaill"><br><br>
+                  </div>
+                  <div class="dnote">
+                    <label for="note">Notes</label><br>
+                    <textarea id="note" name="note" placeholder="Ajouter des demandes spéciales" rows="4" cols="50"></textarea><br><br>
+                  </div>
+                </fieldset>
+                <input id="boutton" id="boutton-reserver" type="submit" value="Réserver">
+              </form>
+            </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!----------------Fin de page ----------------------->
+    <div class="footer-background">
+      <footer>
+        <div class="footer-container">
+          <div class="contact">
+            <h3 class="h3contact">Contact</h3>
+            <ul>
+              <li><strong>Adresse:</strong> 02 Rue Didouche Mourad, Alger</li>
+              <li><strong>Mail:</strong> contact@univ-alger.dz</li>
+              <li><strong>Tél:</strong> +213 (0) 21 63 77 65</li>
+              <li><strong>Fax:</strong> +213 (0) 21 63 78 64</li>
+            </ul>
+          </div>
+          <div class="social-media">
+            <h3>Trouvez-nous sur</h3>
+            <div class="social-icons">
+              <a href="https://www.instagram.com/univ_alger/" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.facebook.com/univ.alger/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.youtube.com/user/univalger" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="location">
+            <h3 class="h3loca">Localisation</h3>
+            <p>Vous ne trouvez pas votre amphy? Recherchez-le.</p>
+            <input type="text" id="searchInput" placeholder="Entrez le nom de l'amphy.">
+            <div id="map">
+                <img src="photos/Capture d’écran 2024-05-08 145451.png" alt="Carte de localisation">
+            </div>
+          </div>
+        </div>
+      </footer>
+    
+    </div>
+    <script src="récla.js"></script>
+    <script src="nav-dropdown.js"></script>
+    <script src="footerjs.js"></script>
+</body>
+</html>

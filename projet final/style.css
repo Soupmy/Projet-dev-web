@@ -1,0 +1,446 @@
+/* Styles généraux */
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/* pour pas qu'il y ait d'interférences entre la nav bar et le reste */
+
+header::after {
+  z-index: 0;
+}
+
+/*section intro */
+
+.bienvenu {
+  height: 95vh;
+  background-image: url(ACCEUIL;jpg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 40%;
+    padding-top: 5em;
+    width: 100%;
+    background-color: #f0f0f0;
+    margin:0;
+}
+
+/* Section à propos */
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0;
+  padding: 40px;
+}
+
+.chat-box {
+  background-color: #1F485E;
+  border-radius: 20px;
+  padding: 20px;
+  margin-right: 40px;
+}
+
+.chat-bubble {
+  background-color: #ffffff;
+  color: #99D3ED;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+.chat-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.chat-text {
+  color: #1F485E;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.chat-description {
+  padding: 10px 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.chat-description.show {
+  max-height: 100px; /* Ajustez cette valeur selon la taille de votre description */
+}
+
+.toggle-btn {
+  color: #1F485E;
+  font-weight: bold;
+}
+
+.content {
+  text-align: center;
+}
+
+.content h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #1F485E;
+  font-weight: 700;
+}
+
+.content p {
+  font-size: 20px;
+  margin-bottom: 30px;
+  font-weight: 200;
+}
+.discover-btn {
+  background-color: #0091D3;
+  width: 175px;
+  height: 55px;
+  border-radius: 25px;
+  border: none;
+  display: inline-block;
+  justify-content: center;
+  margin: 0 auto;
+  font-weight: 300;
+  font-size: 15px;
+  color: white;
+  transition: 0.5s;
+  padding: 12px 24px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.discover-btn:hover {
+  transform: translateY(-2px);
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+  /*pour la partie statistique */
+
+
+
+.stats-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#1F485E;
+    color: #fff;
+    padding: 50px;
+    border-radius: 50px;
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+.stat {
+    text-align: center;
+    margin: 0 30px;
+}
+
+.stat-number {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.stat-label {
+    font-size: 18px;
+    margin: 10px 0 0;
+}
+/* css de la 3eme section experience des etudiant */ 
+.carte-container-cont{
+  width: 80%;
+  justify-content: center;
+ margin-left: 150px;
+}
+
+.carte-container {
+    justify-content: space-between; 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px; 
+  }
+  
+  .carte {
+    width: 90%;
+    background-color: white;
+    color: #1F485E;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 30px;
+   /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);*/
+    position: relative;
+    transition: transform 0.5s ease;
+    
+  }
+  .carte:hover{
+  transform: translateY(-2px);
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    background-color: #e1f6ff ;
+    
+  }
+  /*
+  .carte:hover:before {
+    
+      transform: translateY(-2px);
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  .carte:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    background-color: #99D3ED ;
+  }
+  */
+  .photo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  #section3{
+    
+    color: #1F485E;
+    font-size: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-left:-100px
+    
+  }
+  h3 {
+    margin-top: 0;
+    font-size:30px;
+
+  }
+  
+  .profession {
+    font-weight: bold;
+  }
+  
+  .email {
+    margin-bottom: 10px;
+  }
+  .sous-titre{
+    margin-bottom: 50px;
+    margin-top: -20px;
+    color: #1F485E;
+    font-size: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left:-300px
+    
+  }
+
+  /* pour le upcoming event titre */ 
+  /*petit soucis lol*/
+
+
+  .upcoming {
+    margin-top: 15px;
+    color: #1F485E;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: -10px;
+   
+  }
+  .upcomingP {
+    margin-top: -20px;
+    margin-bottom: 20px;
+    color: #1F485E;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 26px;
+  }
+  #h2{
+    font-size: 56px;
+    font-weight: bold;
+  }
+  
+.events .section-heading {
+    margin-bottom: 100px;
+    justify-content: center;
+    font-size: 60px;
+  }
+  
+  .events .item {
+    background-color: #b8e8ff;
+    border-radius: 25px;
+    position: relative;
+    padding: 40px;
+    margin-bottom: 76px;
+    height: 70px;
+  }
+  
+  .events .item .image {
+    position: relative;
+  }
+  
+  
+  .events .item .image img {
+    position: absolute;
+    border-radius: 25px;
+    max-width: 260px;
+    left: 0;
+    top:-70px ;
+    height: 200px;
+    transition: 0.3s ease-out;
+  }
+
+  .events .item .image img:hover {
+    transform: scale(1.1);
+  }
+  
+  .events .item ul li {
+    display: inline-block;
+    width: 17.5%;
+    vertical-align: middle;
+  }
+  
+  .events .item ul li:first-child {
+    width: 35%;
+  }
+  
+  .events .item ul li:nth-of-type(2) {
+    width: 28%;
+  }
+  
+  .events .item ul li span.category {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #1F485E;
+    background-color: #fff;
+    padding: 8px 20px;
+    border-radius: 25px;
+    font-weight: 500;
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-left: 40px;
+  }
+  
+  .events .item ul li h4 {
+    font-size: 22px;
+    font-weight: 600;
+  }
+  
+  .events .item ul li span {
+    display: inline-block;
+    font-size: 14px;
+    color: #4a4a4a;
+    margin-bottom: 10px;
+  }
+  
+  .events .item ul li h6 {
+    font-size: 16px;
+    color: #1F485E;
+    font-weight: 600;
+    margin-top: 40px;
+  }
+  
+  .events .item a {
+    position: absolute;
+    right: 0;
+    background-color: #1F485E;
+    width: 60px;
+    top: 22px;
+    height: 120px;
+    display: inline-block;
+    text-align: center;
+    line-height: 120px;
+    font-size: 18px;
+    z-index: 1;
+    color: #fff;
+    border-radius: 60px 0px 0px 60px;
+  }
+
+  
+/*-------------------FOOTER STYLE------------------*/
+
+footer {
+  background-color: #1F485E;
+  color: #fff;
+  padding: 40px 0; 
+  border-radius: 150px 150px 0px 0px ;
+  height: 340px
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h3 {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 19px;
+}
+.h3contact{
+  margin-bottom: 55px;
+}
+.h3loca{
+  margin-right:-20px
+}
+.contact ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.contact li {
+  margin-bottom: 35px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons a {
+  color: #0091D3;
+  padding: 0px 10px;
+  font-size: 40px;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #FFFC9A;
+}
+
+.social-icons a:nth-child(2) {
+  color: #FFFC9A;
+}
+
+.social-icons a:nth-child(2):hover {
+  color: #0091D3;
+}
+
+#searchInput {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+#map img {
+  height: 200px;
+  width: 300px;
+  padding-left: 30px;
+  padding-top: 10px;
+  
+}

@@ -1,0 +1,355 @@
+*{
+
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    
+
+  }
+.background{
+    background-image: url(pho.jpg);
+    background-size: cover;
+    background-position: 50% 80%;
+    background-repeat: no-repeat;
+    padding-top: 5em;
+    width: 100%;
+    margin:0;
+    
+} 
+.color {
+    background-color: #F0F0F0;
+    padding-bottom: 3em;
+    margin: 0;
+}
+
+.titre {
+    margin-left: 50px;
+    color: #1F485E;
+    font-size: 55px;
+    font-weight: 800;
+    width: 800px;
+}
+
+.text {
+    font-weight: 600;
+    font-size: 25px;
+    color: #1F485E;
+    margin-left: 50px;
+    padding-bottom: 5px;
+    width: 800px;
+}
+
+.sous-text {
+    color: #99D3ED;
+    margin-left: 50px;
+    width: 800px;
+    padding-bottom: 80px;
+}
+
+.t {
+    color: #1F485E;
+    font-size: 25px;
+    font-weight: 600;
+    
+}
+
+.rdv{
+    margin-left: 50px;
+}
+
+h2 {
+    font-weight: 800;
+    font-size: 56px;
+    text-align: center;
+    color: #1F485E;
+    padding-bottom: 5px;
+    letter-spacing: 3px;
+}
+
+
+.formulaire fieldset {
+    border: none;
+    padding:1em 100px 1em 100px;
+}
+
+.formulaire{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    border: 4px  solid #1F485E;
+    font-weight: 500;
+    width: fit-content;
+    border-radius: 5%;
+    padding: 30px 0;
+    
+}
+
+.important {
+    padding-top: 0.5em;
+    padding-bottom: 0%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    color: #1F485E;
+}
+
+.formulaire input{
+    border-radius: 8px;
+    border: #99D3ED solid 2px;
+    justify-content: right;
+    align-items: right;
+    display: inline-block;
+}
+.formulaire .nom {
+    justify-content: space-between;
+}
+.formulaire #nom{
+    display: inline-flex;
+}
+.formulaire #prenom {
+    display: inline-flex;
+}
+.formulaire .deux{
+    margin-left: 55px;
+}
+.formulaire .trois {
+    margin-left: 20px;
+}
+
+.formulaire input:required {
+    border-color: #0091D3; /* Change la couleur de la bordure */
+  }
+  
+.formulaire input:required:valid {
+    border-color: #99D3ED; /* Couleur de la bordure lorsque le champ est rempli */
+    background-color: #e8f0fe;
+  }
+  
+.objet_message {
+    align-items: center;
+    color: #1F485E;
+    border-radius: 25px;
+    font-size: 16px;
+    padding: 5px 0;
+}
+
+.formulaire textarea {
+    max-width: 500px;
+    max-height: 300px;
+    min-height: 150px;
+    min-width: 500px;
+    height: fit-content;
+    border-radius: 5px;
+    border: 3px solid #1F485E;
+    /* enlever la barre de scroll*/
+}
+
+#boutton {
+    background-color: #0091D3;
+    width: 175px;
+    height: 55px;
+    border-radius: 25px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#boutton:hover {
+    transform: translateY(-2px);
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.prise-rdv {
+    justify-content: center;
+    width: 750px;
+    background-color: white;
+    margin: 0 auto;
+    box-shadow: 5px 5px 15px 5px rgba(192, 192, 192, 0.181);
+    padding: 1em 0;
+    border-radius: 5px;
+}
+
+    
+fieldset {
+    border: none;
+    padding:1em;
+}
+.info-perso{
+    font-weight: 600;
+    text-align: center;
+    align-items: center;
+    color: #1F485E;
+    font-size: 35x;
+ }
+.choix {
+    color: #1F485E;
+    font-weight: 600;
+    font-size: 20px;
+    padding-top: 25px;
+    justify-content: center;
+    text-align: center;
+}
+.second {
+    display: flex;
+  margin-top: 1em;
+  align-items: flex-start;
+}
+.second label{
+    font-weight: 600;
+    color: rgb(88, 87, 87);
+}
+.second input{
+    background-color: rgb(244, 244, 244);
+    border: 4px  solid rgb(244, 244, 244);
+    border-radius: 5px;
+    width: 300px;
+    
+}
+#note{
+    background-color: rgb(244, 244, 244);
+    border: 4px  solid rgb(244, 244, 244);
+    max-width: 300px;
+    min-width: 300px;
+    min-height: 150px;
+    max-height: 150px;
+    border-radius: 5px;
+    
+ } 
+
+ .info {
+    margin-right: 1em;
+    width: 48%;
+    
+ }
+ .dnote{
+    width: 48%;
+ }
+ 
+.dnote legend {
+  font-weight: 600;
+  color: #1F485E;
+  font-size: 20px;
+  margin-bottom: 0.5em;
+}
+
+ .radio {
+    display: inline-flex;
+    justify-content: center;
+    border-radius: 25px;
+    text-align: center;
+    margin: 20px;
+    width: 200px;
+    height: 70px;
+    font-weight: 600;
+    color: #1F485E;
+    margin-left: 10%;
+ }
+
+ .radio input {
+    display: none;
+ }
+
+ .radio label {
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #0091D3;
+    border-top: 5px solid #0091D3;
+    border-radius: 25px;
+    width: 200px;
+    height: 70px;
+    font-weight: 500;
+    font-size: 20px;
+ }
+
+ .radio-input:checked + .radio-label {
+    box-shadow: inset  10px 5px 5px 7px rgba(0,0,0,0.08);
+    border-top: 1px solid #0091D3;
+    transition-duration: 0.6s;
+ }
+
+.info-perso {
+    font-size: 20px;
+    padding: 1em ;
+}
+
+.en-savoir-plus {
+    color: #0091D3;
+    font-weight: 700;
+    font-size: 25px;
+    margin-bottom: 3EM;
+    cursor: pointer;
+    border: none;
+}
+
+.hidden {
+    display: none;
+}
+.footer-background {
+    background-color: #F0F0F0;
+}
+
+.date-select {
+    margin-right: 10px;
+    border-radius: 12px;
+    border-color: #1F485E;
+    padding: 5px;
+    font-size: 16px;
+    color: #1F485E;
+  }
+  
+  .calendrier-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .heures-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+  
+  .heure-radio {
+    border: 2px solid #0091D3;
+    display: inline-flex;
+    justify-content: center;
+    border-radius: 25px;
+    text-align: center;
+    margin: 20px;
+    width: 100px;
+    height: 40px;
+    font-weight: 450;
+    color: #1F485E;
+  }
+  .heure-radio input{
+    display: none;
+  }
+  .heure-radio label {
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 25px;
+    width: 100px;
+    height: 40px;
+    font-weight: 450;
+    font-size: 20px;
+  }
+  .heure-radio input[type="radio"]:checked + label {
+    background-color: #0091D3;
+    color: white;
+    font-weight: 500;
+    transition-duration: 0.6s;
+  }
+  

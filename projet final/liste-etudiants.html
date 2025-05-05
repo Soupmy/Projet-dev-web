@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liste d'étudiants</title>
+    <link rel="stylesheet" href="liste.css">
+    <link rel="stylesheet" href="navbar-pages.css">
+    <link rel="stylesheet" href="newfooter.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"        integrity="sha512-..." crossorigin="anonymous" /> 
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <div class="navbar">    
+            <nav class="nav"> 
+                <div class="logo">
+                    <img src="img/logo.jpg" alt="Logo de l'université">
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li class="element"><a href="acceuil.html" class="navbar-link">Acceuil</a></li>
+                        <li class="element">
+                          <a href="" class="navbar-link">Etudiants</a>
+                          <ul class="dropdown">
+                            <li><a href="liste-etudiants.html">Liste d'etudiants</a></li>
+                            <li><a href="Emploi du temps.html">Emploi du temps</a></li>
+                            <li><a href="club.html">Clubs</a></li>
+                          </ul>
+                        </li>
+                        <li class="element"><a href="profsrenseignements.html" class="navbar-link">Liste de contactes</a></li>
+                        <li class="element"><a href="reclamation.html" class="navbar-link contacter">Nous contacter</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+      </header>
+
+    <!---------------debut page------------------>
+    <div class="ren">
+        <div class="forbg">
+            <h1>Vous ne savez pas dans quelle section vous êtes ?</h1>
+            <div class="renseigne">
+                <p>Géneraleralement, les listes d'étudiants sont classées par ordre alphabétique: exemple, pour un nom de famille commençant par A, il est très probable qu'il soit en Section 1 ou A. Pour plus d'information, veuillez contacter le departement par le biais de la page de <a href="reclamation.html">demandes et renseignements</a></p>
+            </div>
+        
+
+
+        <h1>Téléchargement de listes</h1>
+        </div>
+        <div class="selectors">
+            <div class="select-option">
+                <label for="annee">Année:</label>
+                <select id="annee" name="annee">
+                    <option value="">Sélectionnez une année</option>
+                </select>
+            </div>
+            <div class="select-option">
+                <label for="section">Section:</label>
+                <select id="section" name="section" disabled>
+                    <option value="">Sélectionnez une section</option>
+                </select>
+            </div>
+        
+        <button id="telecharger" disabled>Télécharger</button>
+        </div>
+    
+    <div id="preview-container" style="display: none;">
+        <h3>Preview de la liste</h3>
+        <embed id="pdf-preview" src="" type="application/pdf" width="100%" height="500px" />
+    </div>
+    
+    <!----------------Fin de page ----------------------->
+
+    <footer>
+        <div class="footer-container">
+          <div class="contact">
+            <h3 class="h3contact">Contact</h3>
+            <ul>
+              <li><strong>Adresse:</strong> 02 Rue Didouche Mourad, Alger</li>
+              <li><strong>Mail:</strong> contact@univ-alger.dz</li>
+              <li><strong>Tél:</strong> +213 (0) 21 63 77 65</li>
+              <li><strong>Fax:</strong> +213 (0) 21 63 78 64</li>
+            </ul>
+          </div>
+          <div class="social-media">
+            <h3>Trouvez-nous sur</h3>
+            <div class="social-icons">
+              <a href="https://www.instagram.com/univ_alger/" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.facebook.com/univ.alger/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.youtube.com/user/univalger" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="location">
+            <h3 class="h3loca">Localisation</h3>
+            <p>Vous ne trouvez pas votre amphy? Recherchez-le.</p>
+            <input type="text" id="searchInput" placeholder="Entrez le nom de l'amphy">
+            <div id="map"><img alt="image de Localisation" src="photos/Capture d’écran 2024-05-08 145451.png"></div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="liste.js"></script>
+    <script src="footerjs.js"></script>
+</body>
+</html>
